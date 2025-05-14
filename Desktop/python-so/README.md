@@ -1,0 +1,4 @@
+# Topics:
+- Python
+- POO
+- Django
