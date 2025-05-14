@@ -1,4 +1,0 @@
-# Topics:
-- Python
-- POO
-- Django
