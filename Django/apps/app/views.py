@@ -18,7 +18,7 @@ def imagem(request, foto_id): #função view
     return render(request, 'app/imagem.html', {"fotografia": fotografia})
 
 def buscar(request): #3- Busca os itens do banco de dados
-    if not request.user.id_authenticated:
+    if not request.user.is_authenticated:
         messages.error(request, 'Usuário não logado!')
         return redirect('login')
     
@@ -32,3 +32,12 @@ def buscar(request): #3- Busca os itens do banco de dados
     
     #5- Passa para o render
     return render(request, "app/buscar.html", {"cards":fotografias}) 
+
+def nova_imagem(request):
+    return render(request, 'app/nova_imagem.html')
+
+def editar_imagem(request):
+    pass
+
+def deletar_imagem(request):
+    pass
