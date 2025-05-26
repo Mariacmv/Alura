@@ -1,6 +1,6 @@
 from django.urls import path
 from apps.app.views import \
-    index, imagem, buscar, nova_imagem, editar_imagem, deletar_imagem #para ter mais espaço
+    index, imagem, buscar, nova_imagem, editar_imagem, deletar_imagem, filtro #para ter mais espaço
 
 urlpatterns = [
     path('', index, name='index'), #determino um nome a url
@@ -9,4 +9,5 @@ urlpatterns = [
     path('nova_imagem/', nova_imagem, name='nova_imagem'),
     path('editar_imagem/<int:foto_id>', editar_imagem, name='editar_imagem'),
     path('deletar-imagem/<int:foto_id>', deletar_imagem, name='deletar_imagem'),
+    path('filtro/<str:categoria>', filtro, name='filtro')
 ]#lista dos caminhos

@@ -32,7 +32,7 @@ def buscar(request): #3- Busca os itens do banco de dados
             fotografias = fotografias.filter(nome__icontains=nome_a_buscar) #busca se existe dentro do nome a buscar alguma semelhança com algum item dentro do site
     
     #5- Passa para o render
-    return render(request, "funcionalidades/buscar.html", {"cards":fotografias}) 
+    return render(request, "funcionalidades/index.html", {"cards":fotografias}) 
 
 def nova_imagem(request):
     if not request.user.is_authenticated: #para quando um usuário não estiver logado ou não tiver cadastro
@@ -67,3 +67,7 @@ def deletar_imagem(request, foto_id):
     fotografia.delete()
     messages.success(request, 'Deleção feita com sucesso!')
     return redirect('index')
+
+def filtro(request, categoria):
+    fotografias = Fotografia.objects.order_by("data_fotografia").filter(publicada=True, categoria=categoria)
+    return render(request, 'funcionalidades/index.html', {"cards":fotografias})
