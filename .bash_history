@@ -703,3 +703,130 @@ logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=info msg=\"ac
 logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=error msg=\"unauthorized: Tentativa de login SSH falhou\""
 logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=info msg=\"Sistema funcionando corretamente\""
 logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=warning msg=\"fail: Erro no driver de rede\""
+ls
+cd linux
+ls
+less /var/log/syslog
+find syslog
+find auth.log
+find -r auth.log
+find -R auth.log
+cd ~
+ls
+cd mariaclara
+ls
+cd ..
+ls
+git init
+git remote add origin https://github.com/Mariacmv/Alura.git
+git fetch origin
+git checkout main
+git add .
+git commit -m "Adicionando arquivos dos cursos linux alura"
+git config --global user.email "mariaclaragmviana@gmail.com"
+git config --global user.name "Mariacmv"
+git commit -m "Adicionando arquivos dos cursos linux alura"
+git push origin main
+git reset --hard origin/main
+git push origin main --force
+git reset --hard HEAD~1
+git push origin main --force
+ls
+pwd
+git reflog
+git checkout ccef009
+git checkout -b resgate-arquivos-locais
+ls
+git checkout main
+git add /home/mariaclara
+ls
+git status
+git checkout main
+git merge resgate-arquivos-locais
+git add home/mariaclara/ home/myapp/ home/scripts-linux/
+pwd
+git add mariaclara/ myapp/ scripts-linux/
+git commit -m "Adicionando apenas as pastas que desejo"
+git push origin main
+curl https://www.alura.com.br/
+clear
+curl --head https://www.alura.com.br/
+curl --head https://www.alura.com.br/ | grep "HTTP/2 200"
+curl -s --head https://www.alura.com.br/ | grep "HTTP/2 200"
+echo $?
+clear
+vim monitoramento-sistema.sh
+ls
+cd linux
+ls
+cd ..
+cd ~
+ls
+vim monitoramento-sistema.sh 
+./monitoramento-sistema.sh
+vim monitoramento-sistema.sh 
+mkdir monitoramento-sistema
+ls
+logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=error msg=\"error: Falha ao iniciar o serviço Apache\""
+logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=warning msg=\"failed: Serviço Nginx não conseguiu se reiniciar\""
+logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=info msg=\"access denied: Tentativa de acesso ao banco de dados falhou\""
+logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=error msg=\"unauthorized: Tentativa de login SSH falhou\""
+logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=info msg=\"Sistema funcionando corretamente\""
+logger -p local0.info "time=\"$(date +'%Y-%m-%dT%H:%M:%S')\" level=warning msg=\"fail: Erro no driver de rede\""
+ls
+./monitoramento-sistema.sh
+vim monitoramento-sistema.sh 
+./monitoramento-sistema.sh
+vim monitoramento-sistema.sh 
+cat monitoramento-sistema.sh
+which bash
+ls -l monitoramento-sistema.sh
+chmod +x monitoramento-sistema.sh
+ls -l monitoramento-sistema.sh
+file monitoramento-sistema.sjh
+file monitoramento-sistema.sh
+bash monitoramento-sistema.sh
+vim monitoramento-sistema.sh
+strace ./monitoramento-sistema.sh
+sudo apt install strace
+strace ./monitoramento-sistema.sh
+file monitoramento-sistema.sh
+sudo apt install file
+file monitoramento-sistema.sh
+head -n1 monitoramento-sistema.sh | cat -A
+vim monitoramento-sistema.sh
+chmod +x monitoramento-sistema.sh
+./monitoramento-sistema.sh
+vim monitoramento-sistema.sh
+./monitoramento-sistema.sh
+find var
+ls
+ls /var/log
+vim monitoramento-sistema.sh
+./monitoramento-sistema.sh
+sudo ./monitoramento-sistema.sh
+ls
+cd monitoramento-sistema
+ls
+cd ..
+cd monitoramento_sistema
+ls
+cd ..
+rmdir monitoramento_sistema
+ls
+cd monitoramento-sistema
+ls
+cat monitoramento_logs_sistema.txt 
+cat monitoramento_rede.txt 
+clear
+cd ..
+df
+df -h
+clear
+df -a
+df -a -h
+df -T
+df -i
+clear
+df --total
+df --total -h

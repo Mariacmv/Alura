@@ -1,0 +1,7 @@
+Jun 07 19:09:14 MariaNote kernel: misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+Jun 07 19:09:14 MariaNote kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jun 07 19:09:14 MariaNote kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jun 07 19:09:14 MariaNote kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jun 07 19:09:14 MariaNote kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jun 07 19:09:14 MariaNote kernel: misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Jun 07 19:09:26 MariaNote unknown: WSL (150) ERROR: CheckConnection: getaddrinfo() failed: -5
