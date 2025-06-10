@@ -2,3 +2,15 @@
 .config/
 .java/
 *.userPrefs/
+.bash_history
+.bash_logout
+.bashrc
+.bashrc.original
+.gitconfig
+.lesshst
+.profile
+.selected_editor
+.sudo_as_admin_successful
+.viminfo
+.zprofile
+.zshrc
