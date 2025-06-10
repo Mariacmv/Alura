@@ -1,0 +1,4 @@
+# Ignorar configs pessoais
+.config/
+.java/
+*.userPrefs/
