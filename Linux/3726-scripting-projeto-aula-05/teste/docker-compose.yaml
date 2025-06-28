@@ -21,7 +21,6 @@ services:
     networks:
       - adopet
     restart: unless-stopped
-
   postgres:
     image: postgres:latest
     container_name: adopet-db
