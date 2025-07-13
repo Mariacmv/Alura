@@ -1,0 +1,1 @@
+Linhas: 8 frases.txt Palavras: 55 frases.txt Caracteres: 314 frases.txt Linha mais longa: 43 frases.txt
