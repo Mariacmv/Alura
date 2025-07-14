@@ -1,16 +1,12 @@
-equipea = input("Equipe A: ").lower().split(', ')
-equipeb = input("Equipe B: ").lower().split(', ')
+equipe_a = {"planejar reunião", "revisar documento", "testar sistema"}
+equipe_b = {"testar sistema", "implementar funcionalidade", "corrigir bug"}
 
-list(equipea)
-list(equipeb)
+tarefas = equipe_a.union(equipe_b)
 
-print(equipea)
-print(equipeb)
+tarefa_remover = input("Digite a tarefa que deseja remover: ").lower()
 
-equipea.append(equipeb)
+tarefas.discard(tarefa_remover)
 
-for elemento in equipea:
-    if elemento in equipea:
-        equipea.pop(elemento)
+print(equipe_a, '\n', equipe_b)
 
-print(f'Depois de adicionar: {equipea}')
+#não está certo
