@@ -22,5 +22,9 @@ public class Main{
                 Artista Enhypen
                 Ano de lançamento: """ +anoDeLancamento; //permite concatenar também
         System.out.println(dados);
+
+        int classificacao;
+        classificacao = (int) (media/2);
+        System.out.println(classificacao); 
     }
 }
