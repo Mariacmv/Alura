@@ -68,5 +68,7 @@ def analisador_sentimentos(produto):
         print(f"Erro de API: {e}")
     
     
-
-analisador_sentimentos("Maquiagem mineral")
+#análise em lote
+lista_de_produtos = ['Maquiagem mineral']
+for um_produto in lista_de_produtos:
+    analisador_sentimentos(um_produto)
