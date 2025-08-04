@@ -6,16 +6,30 @@ from time import sleep
 from helpers import *
 from selecionar_persona import *
 from selecionar_documento import *
+from vision_ecomart import analisar_imagem
+import uuid #para a manipulação de imagens
 
 load_dotenv()
 
 cliente = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-modelo = "gpt-4"
+modelo = "gpt-4-1106-preview" #para o uso de imagens
 
 app = Flask(__name__)
 app.secret_key = 'maria' #no curso é 'alura'
 
+assistente = pegar_json()
+thread_id = assistente["thread_id"]
+assistente_id = assistente["assistant_id"]
+file_ids = assistente["file_ids"]
+
+STATUS_COMPLETED = "completed"
+STATUS_REQUIRES_ACTION = "requires_action"
+
+caminho_imagem_enviada = None
+UPLOAD_FOLDER = 'dados'
+
 def bot(prompt): #resposta do chatbot
+    global caminho_imagem_enviada 
     maximo_tentativas = 1 #para cada interação com o usuário
     repeticao = 0
     personalidade = personas[selecionar_persona(prompt)] #definindo a personalidade
@@ -57,6 +71,13 @@ def bot(prompt): #resposta do chatbot
                         return "Erro no GPT: %s" % erro
                 print('Erro de comunicação com OpenAI:', erro)
                 sleep(1)
+
+@app.route('/upload_imagem', methods=['POST'])
+def upload_imagem():
+    global caminho_imagem_enviada
+    if 'imagem' in request.files:
+        imagem_enviada = request.files['imagem']
+        
 
 @app.route("/chat", methods=["POST"])
 def chat():
